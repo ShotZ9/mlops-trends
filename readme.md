@@ -1,4 +1,3 @@
-````markdown
 # MLOps Trends24 Indonesia Scraper
 
 Scraper otomatis yang mengambil data tren Twitter dari [trends24.in/indonesia](https://trends24.in/indonesia/)
