@@ -1,66 +1,46 @@
-name: Scrape Trends24 Indonesia
+name: MLOps CI/CD
 
 on:
-  schedule:
-    - cron: '0 * * * *'   # jalan tiap 1 jam
-  workflow_dispatch:       # bisa dijalankan manual
-
-permissions:
-  contents: write
-  packages: write
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
 
 jobs:
-  scrape:
+  build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Python
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
       - name: Install dependencies
-        run: pip install -r app/requirements.txt
-
-      - name: Run scraper
         run: |
-          python - <<'EOF'
-          from app.scraper import scrape_trends
-          import json, os
-          data = scrape_trends()
-          os.makedirs("data", exist_ok=True)
-          with open("data/trends.json", "w", encoding="utf-8") as f:
-              json.dump(data, f, ensure_ascii=False, indent=2)
-          print("✅ Scraped trends:", len(data["trends"]))
-          EOF
+          pip install -r requirements.txt
+          pip install "dvc[s3]>=3.50.0"
 
-      - name: Commit and push results
+      - name: Configure DVC remote
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/trends.json
-          git commit -m "update trends $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
-          git push
+          dvc remote add -d -f b2remote s3://$B2_BUCKET_NAME
+          dvc remote modify b2remote endpointurl $B2_ENDPOINT
+          dvc remote modify b2remote access_key_id $B2_KEY_ID
+          dvc remote modify b2remote secret_access_key $B2_APP_KEY
+        env:
+          B2_BUCKET_NAME: ${{ secrets.B2_BUCKET_NAME }}
+          B2_ENDPOINT: ${{ secrets.B2_ENDPOINT }}
+          B2_KEY_ID: ${{ secrets.B2_KEY_ID }}
+          B2_APP_KEY: ${{ secrets.B2_APP_KEY }}
 
-  build-and-push-image:
-    needs: scrape
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: Pull latest dataset
+        run: dvc pull -r b2remote || true
 
-      - name: Log in to GitHub Container Registry
-        uses: docker/login-action@v3
-        with:
-          registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Run scraping stage
+        run: dvc repro
 
-      - name: Build and push Docker image
-        uses: docker/build-push-action@v6
-        with:
-          context: .
-          push: true
-          tags: ghcr.io/shotz9/mlops-trends:latest
+      - name: Push updated data to DVC remote
+        run: dvc push -r b2remote

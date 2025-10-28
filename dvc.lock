@@ -1,0 +1,14 @@
+schema: '2.0'
+stages:
+  scrape:
+    cmd: python src/app.py
+    deps:
+    - path: src/app.py
+      hash: md5
+      md5: 07a6b3d61edb0f2e7a479617c3338439
+      size: 819
+    outs:
+    - path: data/trends.json
+      hash: md5
+      md5: 4cc333353f18198efc6d4dfac28b254d
+      size: 174
