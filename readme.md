@@ -65,12 +65,3 @@ Workflow otomatis akan:
 
 **Yoel Amadeo Pratomo**
 *MLOps Final Project — Data Collection Automation*
-
----
-
-## ✅ Next Steps
-Kamu bisa langsung:
-1. Buat repo GitHub, misal `yoelamadeo/mlops-trends`
-2. Upload semua file di atas
-3. Aktifkan **Actions → Enable workflows**
-4. Tunggu 1 jam (atau klik “Run Workflow”)

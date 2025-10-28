@@ -1,0 +1,66 @@
+name: Scrape Trends24 Indonesia
+
+on:
+  schedule:
+    - cron: '0 * * * *'   # jalan tiap 1 jam
+  workflow_dispatch:       # bisa dijalankan manual
+
+permissions:
+  contents: write
+  packages: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install -r app/requirements.txt
+
+      - name: Run scraper
+        run: |
+          python - <<'EOF'
+          from app.scraper import scrape_trends
+          import json, os
+          data = scrape_trends()
+          os.makedirs("data", exist_ok=True)
+          with open("data/trends.json", "w", encoding="utf-8") as f:
+              json.dump(data, f, ensure_ascii=False, indent=2)
+          print("✅ Scraped trends:", len(data["trends"]))
+          EOF
+
+      - name: Commit and push results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/trends.json
+          git commit -m "update trends $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
+          git push
+
+  build-and-push-image:
+    needs: scrape
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: ghcr.io/${{ github.repository }}:latest
