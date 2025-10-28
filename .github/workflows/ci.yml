@@ -2,9 +2,9 @@ name: MLOps CI/CD
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "main" ]
   schedule:
     # Jalankan tiap 1 jam sekali
     - cron: "0 * * * *"
