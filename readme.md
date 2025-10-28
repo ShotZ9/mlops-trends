@@ -9,7 +9,7 @@ Pipeline ini berjalan otomatis tiap jam melalui **GitHub Actions** dan juga dapa
 ## 🚀 Cara Menjalankan Secara Lokal
 
 ```bash
-git clone https://github.com/<username>/mlops-trends.git
+git clone https://github.com/ShotZ9/mlops-trends.git
 cd mlops-trends
 docker-compose up --build
 ````
@@ -66,8 +66,6 @@ Workflow otomatis akan:
 **Yoel Amadeo Pratomo**
 *MLOps Final Project — Data Collection Automation*
 
-```
-
 ---
 
 ## ✅ Next Steps
@@ -76,9 +74,3 @@ Kamu bisa langsung:
 2. Upload semua file di atas
 3. Aktifkan **Actions → Enable workflows**
 4. Tunggu 1 jam (atau klik “Run Workflow”)
-
----
-
-Mau saya buatin juga **versi ZIP project siap upload ke GitHub** (termasuk folder + file lengkap)?  
-Kalau iya, nanti saya generate otomatis biar kamu tinggal `git push` aja.
-```
