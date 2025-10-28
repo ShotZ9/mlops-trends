@@ -1,0 +1,7 @@
+stages:
+  scrape:
+    cmd: python src/app.py
+    deps:
+      - src/app.py
+    outs:
+      - data/trends.json

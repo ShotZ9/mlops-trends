@@ -1,8 +1,0 @@
-version: '3.9'
-services:
-  trends_scraper:
-    build: .
-    container_name: trends_scraper
-    volumes:
-      - ./data:/app/data
-    restart: unless-stopped
