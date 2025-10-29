@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/675983603946300943/a599e8a405ea4f229701e12deda70def/artifacts
+end_time: 1761743028436
+entry_point_name: ''
+experiment_id: '675983603946300943'
+lifecycle_stage: active
+run_id: a599e8a405ea4f229701e12deda70def
+run_name: trends_scrape_run
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761743028301
+status: 3
+tags: []
+user_id: user

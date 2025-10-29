@@ -1,7 +1,9 @@
 [core]
-    remote = b2remote
+    remote = origin
 ['remote "b2remote"']
     url = s3://mlops-trends-bucket
     endpointurl = https://s3.us-east-005.backblazeb2.com
     access_key_id = 00506c08de46f030000000002
     secret_access_key = K005mT1i/21QfZ6xxayIX65m2geRadQ
+['remote "origin"']
+    url = https://github.com/ShotZ9/mlops-trends.dvc.git

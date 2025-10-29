@@ -5,3 +5,8 @@ stages:
       - src/app.py
     outs:
       - data/trends.json
+
+  log_mlflow:
+    cmd: python src/mlflow_logger.py
+    deps:
+      - data/trends.json

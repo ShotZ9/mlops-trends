@@ -3,3 +3,4 @@ beautifulsoup4
 fastapi
 uvicorn
 dvc[s3]
+mlflow
