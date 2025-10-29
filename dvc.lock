@@ -5,10 +5,10 @@ stages:
     deps:
     - path: src/app.py
       hash: md5
-      md5: 036d7b011d810aacbc9cd979da7390c8
-      size: 2888
+      md5: 9806c2eca53487233fb6b06e714bfb33
+      size: 791
     outs:
     - path: data/trends.json
       hash: md5
-      md5: 6d9630fa69a9658e2926d9377586ad50
-      size: 3198
+      md5: 4b2355dd1bc0199e928ad57cfc09d3c7
+      size: 167
