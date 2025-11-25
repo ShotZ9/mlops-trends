@@ -99,14 +99,15 @@ class TrendClusterizer:
                 "trends": trends
             })
         timestamp = datetime.now().strftime("%d %B %Y - %H:%M")
-        return cluster_list, results, timestamp
+        return cluster_list, results, best_model_name, timestamp
 
     def run(self):
         input_data = self.load_input_data()
-        clustered_data, evaluation_results, timestamp = self.cluster_trends(input_data)
+        clustered_data, evaluation_results, best_model_name, timestamp = self.cluster_trends(input_data)
         self.save_output_data(clustered_data)
         print(f"Clustering selesai. Hasil tersimpan di {self.output_path}")
         print(f"Hasil evaluasi model per {timestamp}")
+        print(f"Best Model: {best_model_name}")
         for name, result in evaluation_results.items():
             print(f"{name}: Silhouette Score = {result['silhouette_score']:.3f}, Davies-Bouldin Index = {result['davies_bouldin_score']:.3f}, Harmonic Mean = {result['harmonic_mean']:.3f}")
 
