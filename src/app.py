@@ -6,6 +6,11 @@ import os
 from urllib.parse import quote_plus
 import re
 from cluster_trends import TrendClusterizer
+import numpy as np
+
+RANDOM_SEED = 42
+
+np.random.seed(RANDOM_SEED) 
 
 class TrendsScraperIndonesia:
     def __init__(self):
