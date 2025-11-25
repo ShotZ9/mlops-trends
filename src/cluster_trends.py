@@ -4,7 +4,10 @@ from sklearn.cluster import KMeans, DBSCAN
 import hdbscan
 from sklearn.metrics import silhouette_score, davies_bouldin_score
 import numpy as np
-np.random.seed(42) 
+
+RANDOM_SEED = 42
+
+np.random.seed(RANDOM_SEED) 
 class TrendClusterizer:
     def __init__(self, input_path, output_path):
         self.input_path = input_path
@@ -29,10 +32,22 @@ class TrendClusterizer:
         
         vectorizer = TfidfVectorizer(max_df=0.5, min_df=2, stop_words='english')
         X = vectorizer.fit_transform(texts)
-        
+        print(type(X))
+        silhouette_scores = []
+        min_cluster, max_cluster = 2, 10
+        for k in range(min_cluster, max_cluster):  # Misalnya, coba dari 2 sampai 10 cluster
+            kmeans = KMeans(n_clusters=k, random_state=RANDOM_SEED)
+            kmeans.fit(X)
+            labels = kmeans.labels_
+            score = silhouette_score(X, labels)
+            silhouette_scores.append(score)
+
+        best_score = max(silhouette_scores)
+        best_n_clusters = silhouette_scores.index(best_score) + min_cluster
+        print("n cluster terbaik untuk KMeans: ", best_n_clusters)
         # Define models
         models = {
-            'KMeans': KMeans(n_clusters=5, random_state=42),
+            'KMeans': KMeans(n_clusters=best_n_clusters, random_state=RANDOM_SEED),
             'DBSCAN': DBSCAN(eps=0.3, min_samples=3),
             'HDBSCAN': hdbscan.HDBSCAN(min_samples=3, min_cluster_size=3)
         }

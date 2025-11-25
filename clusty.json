@@ -83,11 +83,6 @@
                 "data_count": "107.2k"
             },
             {
-                "trend": "FORCEBOOK ARE MY MAGIC",
-                "url": "https://twitter.com/search?q=FORCEBOOK%20ARE%20MY%20MAGIC",
-                "data_count": "134.5k"
-            },
-            {
                 "trend": "WINNYSATANG MAGIC VIBES",
                 "url": "https://twitter.com/search?q=WINNYSATANG%20MAGIC%20VIBES",
                 "data_count": "14.7k"
@@ -106,6 +101,16 @@
                 "trend": "JOONGDUNK 2026 VIBES",
                 "url": "https://twitter.com/search?q=JOONGDUNK%202026%20VIBES",
                 "data_count": "165.1k"
+            }
+        ]
+    },
+    {
+        "title": "Cluster 5",
+        "trends": [
+            {
+                "trend": "FORCEBOOK ARE MY MAGIC",
+                "url": "https://twitter.com/search?q=FORCEBOOK%20ARE%20MY%20MAGIC",
+                "data_count": "134.5k"
             }
         ]
     },
