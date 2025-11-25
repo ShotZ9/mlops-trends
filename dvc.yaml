@@ -9,4 +9,7 @@ stages:
   log_mlflow:
     cmd: python src/mlflow_logger.py
     deps:
+      - src/mlflow_logger.py
       - data/trends.json
+    outs:
+      - mlruns/
