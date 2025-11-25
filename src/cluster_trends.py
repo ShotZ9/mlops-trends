@@ -44,7 +44,7 @@ class TrendClusterizer:
 
         best_score = max(silhouette_scores)
         best_n_clusters = silhouette_scores.index(best_score) + min_cluster
-        print("n cluster terbaik untuk KMeans: ", best_n_clusters)
+        print(f"n cluster terbaik untuk KMeans: {best_n_clusters}")
         # Define models
         models = {
             'KMeans': KMeans(n_clusters=best_n_clusters, random_state=RANDOM_SEED),
