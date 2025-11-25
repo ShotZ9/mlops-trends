@@ -6,8 +6,8 @@ on:
   pull_request:
     branches: [ "main" ]
   schedule:
-    # Jalankan tiap 1 jam sekali
-    - cron: "0 * * * *"
+    # Jalankan tiap 24 jam sekali (jam 00:00)
+    - cron: "0 0 * * *"
 
 permissions:
   contents: write

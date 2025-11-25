@@ -36,7 +36,7 @@ data/trends.json
 
 Workflow otomatis akan:
 
-1. Menjalankan scraper tiap 1 jam (`cron: 0 * * * *`)
+1. Menjalankan scraper tiap 24 jam (`cron: 0 * * * *`)
 2. Menyimpan hasil ke `data/trends.json`
 3. Commit dan push hasil terbaru ke repo
 4. (Opsional) Build image Docker ke GHCR
