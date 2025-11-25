@@ -4,6 +4,7 @@ from sklearn.cluster import KMeans, DBSCAN
 import hdbscan
 from sklearn.metrics import silhouette_score, davies_bouldin_score
 import numpy as np
+from datetime import datetime
 
 RANDOM_SEED = 42
 
@@ -97,15 +98,15 @@ class TrendClusterizer:
                 "title": f"Cluster {cluster_id}" if cluster_id != -1 else "Noise",
                 "trends": trends
             })
-        
-        return cluster_list, results
+        timestamp = datetime.now().strftime("%d %B %Y - %H:%M")
+        return cluster_list, results, timestamp
 
     def run(self):
         input_data = self.load_input_data()
-        clustered_data, evaluation_results = self.cluster_trends(input_data)
+        clustered_data, evaluation_results, timestamp = self.cluster_trends(input_data)
         self.save_output_data(clustered_data)
         print(f"Clustering selesai. Hasil tersimpan di {self.output_path}")
-        print("Hasil evaluasi model:")
+        print(f"Hasil evaluasi model per {timestamp}")
         for name, result in evaluation_results.items():
             print(f"{name}: Silhouette Score = {result['silhouette_score']:.3f}, Davies-Bouldin Index = {result['davies_bouldin_score']:.3f}, Harmonic Mean = {result['harmonic_mean']:.3f}")
 

@@ -79,7 +79,7 @@ class TrendsScraperIndonesia:
                     })
 
             trends_data["meta"]["count"] = len(trends_data["trends"])
-            trends_data["trends"] = trends_data["trends"][:20]  # limit top 20
+            trends_data["trends"] = trends_data["trends"][:50]  # limit top 20
             return trends_data
 
         except Exception as e:

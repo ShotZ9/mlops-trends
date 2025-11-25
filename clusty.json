@@ -56,11 +56,121 @@
                 "trend": "Snapchat",
                 "url": "https://twitter.com/search?q=Snapchat",
                 "data_count": "24.2k"
+            },
+            {
+                "trend": "Yuta",
+                "url": "https://twitter.com/search?q=Yuta",
+                "data_count": "24.5k"
+            },
+            {
+                "trend": "Love of Siam",
+                "url": "https://twitter.com/search?q=Love%20of%20Siam",
+                "data_count": "62.1k"
+            },
+            {
+                "trend": "Trade $CLO",
+                "url": "https://twitter.com/search?q=Trade%20%24CLO",
+                "data_count": "0"
+            },
+            {
+                "trend": "Omeprazole",
+                "url": "https://twitter.com/search?q=Omeprazole",
+                "data_count": "0"
+            },
+            {
+                "trend": "SHTH",
+                "url": "https://twitter.com/search?q=SHTH",
+                "data_count": "0"
+            },
+            {
+                "trend": "GreatBright",
+                "url": "https://twitter.com/search?q=GreatBright",
+                "data_count": "0"
+            },
+            {
+                "trend": "Chanyeol",
+                "url": "https://twitter.com/search?q=Chanyeol",
+                "data_count": "0"
+            },
+            {
+                "trend": "JuMark",
+                "url": "https://twitter.com/search?q=JuMark",
+                "data_count": "0"
+            },
+            {
+                "trend": "P'Tha",
+                "url": "https://twitter.com/search?q=P'Tha",
+                "data_count": "12.0k"
+            },
+            {
+                "trend": "NAMTANFILM IS CALLING YOU",
+                "url": "https://twitter.com/search?q=NAMTANFILM%20IS%20CALLING%20YOU",
+                "data_count": "114.1k"
+            },
+            {
+                "trend": "Cengkeh",
+                "url": "https://twitter.com/search?q=Cengkeh",
+                "data_count": "0"
+            },
+            {
+                "trend": "#WilliamEst",
+                "url": "https://twitter.com/search?q=%23WilliamEst",
+                "data_count": "292.2k"
+            },
+            {
+                "trend": "#dew_jsu",
+                "url": "https://twitter.com/search?q=%23dew_jsu",
+                "data_count": "35.2k"
+            },
+            {
+                "trend": "#tee_vtp",
+                "url": "https://twitter.com/search?q=%23tee_vtp",
+                "data_count": "49.4k"
+            },
+            {
+                "trend": "#YouManiacSeries",
+                "url": "https://twitter.com/search?q=%23YouManiacSeries",
+                "data_count": "75.1k"
+            },
+            {
+                "trend": "#ReplaySeries",
+                "url": "https://twitter.com/search?q=%23ReplaySeries",
+                "data_count": "48.8k"
+            },
+            {
+                "trend": "#OurCosmicClue_Wooyoung",
+                "url": "https://twitter.com/search?q=%23OurCosmicClue_Wooyoung",
+                "data_count": "22.3k"
+            },
+            {
+                "trend": "#TransferMenangGoPay",
+                "url": "https://twitter.com/search?q=%23TransferMenangGoPay",
+                "data_count": "0"
+            },
+            {
+                "trend": "#ArrestandAction",
+                "url": "https://twitter.com/search?q=%23ArrestandAction",
+                "data_count": "43.5k"
+            },
+            {
+                "trend": "#TheSpookyLoveTale",
+                "url": "https://twitter.com/search?q=%23TheSpookyLoveTale",
+                "data_count": "77.0k"
+            },
+            {
+                "trend": "#\u0e2a\u0e01\u0e32\u0e22\u0e19\u0e32\u0e19\u0e34",
+                "url": "https://twitter.com/search?q=%23%E0%B8%AA%E0%B8%81%E0%B8%B2%E0%B8%A2%E0%B8%99%E0%B8%B2%E0%B8%99%E0%B8%B4",
+                "data_count": "184.9k"
+            },
+            {
+                "trend": "#hirunkit_",
+                "url": "https://twitter.com/search?q=%23hirunkit_",
+                "data_count": "165.0k"
             }
         ]
     },
     {
-        "title": "Cluster 2",
+        "title": "Cluster 3",
         "trends": [
             {
                 "trend": "PONDPHUWIN MAGICAL 2026",
@@ -73,19 +183,14 @@
                 "data_count": "229.7k"
             },
             {
-                "trend": "JOONGDUNK 2026 VIBES",
-                "url": "https://twitter.com/search?q=JOONGDUNK%202026%20VIBES",
-                "data_count": "185.9k"
-            },
-            {
-                "trend": "SEAKEEN MIRACULOUS 2026",
-                "url": "https://twitter.com/search?q=SEAKEEN%20MIRACULOUS%202026",
-                "data_count": "12.3k"
+                "trend": "FIRSTKHAOTUNG BEGINS 2026",
+                "url": "https://twitter.com/search?q=FIRSTKHAOTUNG%20BEGINS%202026",
+                "data_count": "48.1k"
             }
         ]
     },
     {
-        "title": "Cluster 0",
+        "title": "Cluster 2",
         "trends": [
             {
                 "trend": "JOSSGAWIN MAGIC VIBES",
@@ -98,11 +203,6 @@
                 "data_count": "125.7k"
             },
             {
-                "trend": "FORCEBOOK ARE MY MAGIC",
-                "url": "https://twitter.com/search?q=FORCEBOOK%20ARE%20MY%20MAGIC",
-                "data_count": "161.5k"
-            },
-            {
                 "trend": "WINNYSATANG MAGIC VIBES",
                 "url": "https://twitter.com/search?q=WINNYSATANG%20MAGIC%20VIBES",
                 "data_count": "20.0k"
@@ -111,6 +211,86 @@
                 "trend": "WHAT WIN MAGIC VIBES",
                 "url": "https://twitter.com/search?q=WHAT%20WIN%20MAGIC%20VIBES",
                 "data_count": "47.2k"
+            },
+            {
+                "trend": "MAGIC VIBES WITH EMIBONNIE",
+                "url": "https://twitter.com/search?q=MAGIC%20VIBES%20WITH%20EMIBONNIE",
+                "data_count": "146.4k"
+            }
+        ]
+    },
+    {
+        "title": "Cluster 7",
+        "trends": [
+            {
+                "trend": "JOONGDUNK 2026 VIBES",
+                "url": "https://twitter.com/search?q=JOONGDUNK%202026%20VIBES",
+                "data_count": "185.9k"
+            }
+        ]
+    },
+    {
+        "title": "Cluster 4",
+        "trends": [
+            {
+                "trend": "FORCEBOOK ARE MY MAGIC",
+                "url": "https://twitter.com/search?q=FORCEBOOK%20ARE%20MY%20MAGIC",
+                "data_count": "161.5k"
+            }
+        ]
+    },
+    {
+        "title": "Cluster 0",
+        "trends": [
+            {
+                "trend": "SEAKEEN MIRACULOUS 2026",
+                "url": "https://twitter.com/search?q=SEAKEEN%20MIRACULOUS%202026",
+                "data_count": "12.3k"
+            },
+            {
+                "trend": "CHIMON MIRACULOUS 2026",
+                "url": "https://twitter.com/search?q=CHIMON%20MIRACULOUS%202026",
+                "data_count": "0"
+            }
+        ]
+    },
+    {
+        "title": "Cluster 8",
+        "trends": [
+            {
+                "trend": "OFFGUN MIRACULOUS",
+                "url": "https://twitter.com/search?q=OFFGUN%20MIRACULOUS",
+                "data_count": "55.5k"
+            }
+        ]
+    },
+    {
+        "title": "Cluster 5",
+        "trends": [
+            {
+                "trend": "MILKLOVE BORN TO SHINE",
+                "url": "https://twitter.com/search?q=MILKLOVE%20BORN%20TO%20SHINE",
+                "data_count": "674.0k"
+            },
+            {
+                "trend": "ALMOND PROGRESS SHINE UP",
+                "url": "https://twitter.com/search?q=ALMOND%20PROGRESS%20SHINE%20UP",
+                "data_count": "26.4k"
+            }
+        ]
+    },
+    {
+        "title": "Cluster 6",
+        "trends": [
+            {
+                "trend": "EARTHMIX MAGIC CHAPTER 2026",
+                "url": "https://twitter.com/search?q=EARTHMIX%20MAGIC%20CHAPTER%202026",
+                "data_count": "35.2k"
+            },
+            {
+                "trend": "LUKEMICK 2026 NEW CHAPTER",
+                "url": "https://twitter.com/search?q=LUKEMICK%202026%20NEW%20CHAPTER",
+                "data_count": "13.6k"
             }
         ]
     }
