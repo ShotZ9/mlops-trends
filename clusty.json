@@ -1,26 +1,11 @@
 [
     {
-        "title": "Noise",
+        "title": "Cluster 1",
         "trends": [
             {
                 "trend": "#GMMTV2026",
                 "url": "https://twitter.com/search?q=%23GMMTV2026",
-                "data_count": "2.1M"
-            },
-            {
-                "trend": "#TransferMenangGoPay",
-                "url": "https://twitter.com/search?q=%23TransferMenangGoPay",
-                "data_count": "0"
-            },
-            {
-                "trend": "#Dewtee",
-                "url": "https://twitter.com/search?q=%23Dewtee",
-                "data_count": "50.9k"
-            },
-            {
-                "trend": "#SkyNani",
-                "url": "https://twitter.com/search?q=%23SkyNani",
-                "data_count": "90.9k"
+                "data_count": "3.9M"
             },
             {
                 "trend": "#TerimaKasihGuruKu",
@@ -28,59 +13,29 @@
                 "data_count": "0"
             },
             {
-                "trend": "JOONGDUNK 2026 VIBES",
-                "url": "https://twitter.com/search?q=JOONGDUNK%202026%20VIBES",
-                "data_count": "58.4k"
+                "trend": "#dewtee",
+                "url": "https://twitter.com/search?q=%23dewtee",
+                "data_count": "152.2k"
             },
             {
-                "trend": "PONDPHUWIN MAGICAL 2026",
-                "url": "https://twitter.com/search?q=PONDPHUWIN%20MAGICAL%202026",
-                "data_count": "108.4k"
+                "trend": "#MrKillSeries",
+                "url": "https://twitter.com/search?q=%23MrKillSeries",
+                "data_count": "74.2k"
             },
             {
-                "trend": "MAGIC VIBES WITH JIMMYSEA",
-                "url": "https://twitter.com/search?q=MAGIC%20VIBES%20WITH%20JIMMYSEA",
-                "data_count": "40.7k"
+                "trend": "#TransferMenangGoPay",
+                "url": "https://twitter.com/search?q=%23TransferMenangGoPay",
+                "data_count": "0"
             },
             {
-                "trend": "WILLIAMEST MAGIC VIBES",
-                "url": "https://twitter.com/search?q=WILLIAMEST%20MAGIC%20VIBES",
-                "data_count": "49.9k"
+                "trend": "HGN 2025",
+                "url": "https://twitter.com/search?q=HGN%202025",
+                "data_count": "0"
             },
             {
-                "trend": "GEMINIFOURTH STARDUST AURA",
-                "url": "https://twitter.com/search?q=GEMINIFOURTH%20STARDUST%20AURA",
-                "data_count": "21.8k"
-            },
-            {
-                "trend": "PERTHSANTA LUMOS 2026",
-                "url": "https://twitter.com/search?q=PERTHSANTA%20LUMOS%202026",
-                "data_count": "69.9k"
-            },
-            {
-                "trend": "MILKLOVE BORN TO SHINE",
-                "url": "https://twitter.com/search?q=MILKLOVE%20BORN%20TO%20SHINE",
-                "data_count": "339.7k"
-            },
-            {
-                "trend": "JOSSGAWIN MAGIC VIBES",
-                "url": "https://twitter.com/search?q=JOSSGAWIN%20MAGIC%20VIBES",
-                "data_count": "17.7k"
-            },
-            {
-                "trend": "MAGIC VIBES WITH EMIBONNIE",
-                "url": "https://twitter.com/search?q=MAGIC%20VIBES%20WITH%20EMIBONNIE",
-                "data_count": "77.7k"
-            },
-            {
-                "trend": "NAMTANFILM IS CALLING YOU",
-                "url": "https://twitter.com/search?q=NAMTANFILM%20IS%20CALLING%20YOU",
-                "data_count": "63.2k"
-            },
-            {
-                "trend": "WHAT WIN MAGIC VIBES",
-                "url": "https://twitter.com/search?q=WHAT%20WIN%20MAGIC%20VIBES",
-                "data_count": "19.2k"
+                "trend": "High & Low",
+                "url": "https://twitter.com/search?q=High%20%26%20Low",
+                "data_count": "49.2k"
             },
             {
                 "trend": "Nahan",
@@ -88,19 +43,84 @@
                 "data_count": "0"
             },
             {
+                "trend": "JAMINAN PENSIUN",
+                "url": "https://twitter.com/search?q=JAMINAN%20PENSIUN",
+                "data_count": "0"
+            }
+        ]
+    },
+    {
+        "title": "Cluster 2",
+        "trends": [
+            {
+                "trend": "PONDPHUWIN MAGICAL 2026",
+                "url": "https://twitter.com/search?q=PONDPHUWIN%20MAGICAL%202026",
+                "data_count": "206.3k"
+            },
+            {
+                "trend": "PERTHSANTA LUMOS 2026",
+                "url": "https://twitter.com/search?q=PERTHSANTA%20LUMOS%202026",
+                "data_count": "167.0k"
+            }
+        ]
+    },
+    {
+        "title": "Cluster 0",
+        "trends": [
+            {
+                "trend": "WILLIAMEST MAGIC VIBES",
+                "url": "https://twitter.com/search?q=WILLIAMEST%20MAGIC%20VIBES",
+                "data_count": "120.6k"
+            },
+            {
+                "trend": "JOSSGAWIN MAGIC VIBES",
+                "url": "https://twitter.com/search?q=JOSSGAWIN%20MAGIC%20VIBES",
+                "data_count": "47.9k"
+            },
+            {
+                "trend": "MAGIC VIBES WITH JIMMYSEA",
+                "url": "https://twitter.com/search?q=MAGIC%20VIBES%20WITH%20JIMMYSEA",
+                "data_count": "107.2k"
+            },
+            {
                 "trend": "FORCEBOOK ARE MY MAGIC",
                 "url": "https://twitter.com/search?q=FORCEBOOK%20ARE%20MY%20MAGIC",
-                "data_count": "34.9k"
+                "data_count": "134.5k"
             },
             {
-                "trend": "Trade $CLO",
-                "url": "https://twitter.com/search?q=Trade%20%24CLO",
+                "trend": "WINNYSATANG MAGIC VIBES",
+                "url": "https://twitter.com/search?q=WINNYSATANG%20MAGIC%20VIBES",
+                "data_count": "14.7k"
+            },
+            {
+                "trend": "MAGIC VIBES WITH EMIBONNIE",
+                "url": "https://twitter.com/search?q=MAGIC%20VIBES%20WITH%20EMIBONNIE",
+                "data_count": "134.3k"
+            }
+        ]
+    },
+    {
+        "title": "Cluster 4",
+        "trends": [
+            {
+                "trend": "JOONGDUNK 2026 VIBES",
+                "url": "https://twitter.com/search?q=JOONGDUNK%202026%20VIBES",
+                "data_count": "165.1k"
+            }
+        ]
+    },
+    {
+        "title": "Cluster 3",
+        "trends": [
+            {
+                "trend": "OFFGUN MIRACULOUS",
+                "url": "https://twitter.com/search?q=OFFGUN%20MIRACULOUS",
+                "data_count": "47.3k"
+            },
+            {
+                "trend": "SEAKEEN MIRACULOUS 2026",
+                "url": "https://twitter.com/search?q=SEAKEEN%20MIRACULOUS%202026",
                 "data_count": "0"
-            },
-            {
-                "trend": "EARTHMIX MAGIC CHAPTER 2026",
-                "url": "https://twitter.com/search?q=EARTHMIX%20MAGIC%20CHAPTER%202026",
-                "data_count": "11.2k"
             }
         ]
     }

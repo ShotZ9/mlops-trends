@@ -138,6 +138,5 @@ if __name__ == "__main__":
     trend_clusty = TrendClusterizer(output_path, "clusty.json")
     trend_clusty.run()
 
-    print(json.dumps(data, indent=2, ensure_ascii=False))
-    print(json.dumps(data, indent=2, ensure_ascii=False))
+    # print(json.dumps(data, indent=2, ensure_ascii=False))
     print(f"✅ Data tren tersimpan di {output_path}")
