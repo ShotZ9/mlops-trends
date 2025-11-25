@@ -2,5 +2,17 @@
   "build": {
     "builder": "DOCKERFILE",
     "dockerfilePath": "Dockerfile"
+  },
+  "deploy": {
+    "restartPolicyType": "ON_FAILURE"
+  },
+  "service": {
+    "type": "web",
+    "ports": [
+      {
+        "port": 8080,
+        "protocol": "HTTP"
+      }
+    ]
   }
 }
