@@ -1,7 +1,7 @@
 import mlflow
 import os
 
-mlflow_uri = os.getenv("MLFLOW_TRACKING_URI", "https://mlflow-production.up.railway.app")
+mlflow_uri = os.getenv("MLFLOW_TRACKING_URI", "https://mlops-trends-mlflow.up.railway.app/")
 
 mlflow.set_tracking_uri(mlflow_uri)
 mlflow.set_experiment("Twitter_Trends_Scraping")
