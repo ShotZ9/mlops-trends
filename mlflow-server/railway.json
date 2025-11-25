@@ -1,9 +1,10 @@
 {
   "build": {
     "builder": "DOCKERFILE",
-    "dockerfilePath": "Dockerfile"
+    "dockerfilePath": "mlflow-server/Dockerfile"
   },
   "deploy": {
+    "startCommand": "mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root s3://mlops-trends-bucket/mlflow --host 0.0.0.0 --port $PORT --workers 1",
     "restartPolicyType": "ON_FAILURE"
   },
   "service": {
